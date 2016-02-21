@@ -1,0 +1,83 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res} 
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document} 
+ 
+\name{Aaron B. Todd\\[12pt]} % the \\[12pt] adds a blank line after name
+
+\address{{\bf Contact} \\ jobs@aarontodd.name \\ (415) 847-0997 }
+
+\address{{\bf Address} \\ 8 Haviland St. Apt B \\ Norwalk, CT 06854 }
+
+
+\begin{resume} 
+ 
+\section{Education}
+B.A. in Computer Science, Grinnell College \hfill \textit{May 2011} \\
+M.S. in Computer Science, Indiana University Bloomington \hfill \textit{May 2013}
+\begin{itemize} \itemsep -2pt
+\item Recieved as part of the PhD program, dropped out December 2013.
+\item Research focus on programming language theory and parallelism.
+\end{itemize}  
+ 
+
+\section{Work Experience}
+
+ {\bf Bridgewater Associates, Westport, CT} \hfill \textit{Jan 2014 - Present} \\
+ Senior Software Developer
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item All work in Scala.
+ \item Implemented features for economics research platform used by investment associates.
+ \item Built optimization algorithms for trade generation pipeline in account management department.
+ \item Designed and implemented domain specific language for algo developers to use.
+ \item Mentored junior developers and instructed the team in functional programming concepts.
+ \end{itemize}
+
+ {\bf Mozilla, Mountain View, CA} \hfill \textit{Summer 2013} \\
+ Research Engineering Intern
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Worked on implementation of green thread runtime with workstealing scheduler.
+ \item Implemented directly in Rust.  
+ \end{itemize}
+  
+\section{Academic Experience}
+
+ {\bf PL Wonks} \hfill \textit{August 2013 - December 2013} \\
+ Indiana University Bloomington \\
+ Research Assistant
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Adviser Ryan Newton.
+ \item Researched deterministic parallel programming working in the Haskell.
+ \item Work on a deterministic parallel merge sort published at PLDI 2014.
+ \end{itemize}
+
+
+ {\bf Pervasive Technology Institute} \hfill \textit{August 2011 - May 2013} \\
+ Indiana University Bloomington \\
+ Research Assistant
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Adviser Beth Plale.
+ \item Implemented REST API abstracting over compute resources in Scala and Akka for the HathiTrust Research Center.
+ \end{itemize}
+ 
+\section{Publications}
+
+Kuper, L., {\bf Todd, A.}, Tobin-Hochstadt S., Newton, R.R. {\bf Taming the Parallel Effect Zoo, Extensible Deterministic Parallelism with LVish} \textit{PLDI '14} 
+
+Kowalczyk, S. T., Sun, Y., Peng, Z., Plale, B., {\bf Todd, A.}, Auvil, L., Willis, C., Zeng, J., Pathirage, M., Liyanage, S., Ruan, G., Downie, J. S. {\bf Big Data at Scale for Digital Humanities: An Architecture for the HathiTrust Research Center} \textit{Big Data Management, Technologies, and Applications, Wen-Chen Hu and Naima Kaabouch (eds)} Book Chapter, IGI Global, 2013
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{Computer \\ Skills}
+   \begin{tabular}{l p{3in}}
+    \underline{Languages:} & {\bf Scala}, Scheme, SQL, Rust, C, Haskell \\
+    \underline{Tools:} & Linux, Git, Emacs, i3wm, IntelliJ
+   \end{tabular}
+
+\end{resume} 
+\end{document} 
